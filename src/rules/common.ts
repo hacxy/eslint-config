@@ -43,6 +43,6 @@ export const CommonRules = {
   'style/linebreak-style': [2, 'unix'],
   // 允许无限禁用规则，设置为 0 表示关闭此规则
   'eslint-comments/no-unlimited-disable': 0,
-
+  // 不允许未使用的模块
   'unused-imports/no-unused-imports': 2,
 } as Rules;

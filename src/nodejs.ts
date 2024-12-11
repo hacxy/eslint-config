@@ -1,6 +1,6 @@
 import baseLinter from '@antfu/eslint-config';
 import { CommonRules } from './rules/common';
-import { NestjsRules } from './rules/nestjs';
+import { NodejsRules } from './rules/nodejs';
 
 const linter: typeof baseLinter = (options, ...userConfig) => {
   return baseLinter({
@@ -8,7 +8,7 @@ const linter: typeof baseLinter = (options, ...userConfig) => {
     ...options,
     rules: {
       ...CommonRules,
-      ...NestjsRules,
+      ...NodejsRules,
       ...options?.rules,
     },
   }, ...userConfig);
