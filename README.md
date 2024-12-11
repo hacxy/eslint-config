@@ -101,7 +101,7 @@ export default linter({
 > });
 > ```
 
-### Vue rules
+### Vue Rules
 
 在vue项目中使用:
 
@@ -111,7 +111,18 @@ export default linter({
   // ... your eslint config
 });
 ```
-该规则在[公共配置](https://github.com/hacxy/eslint-config/blob/main/src/rules/common.ts)的基础上进行扩展, 你可以在 [rules/vue.ts](https://github.com/hacxy/eslint-config/blob/main/src/rules/common.ts) 中可以查看这些规则.
+该规则在[公共配置](https://github.com/hacxy/eslint-config/blob/main/src/rules/common.ts)的基础上进行扩展, 你可以在 [rules/vue.ts](https://github.com/hacxy/eslint-config/blob/main/src/rules/vue.ts) 中可以查看这些规则.
+
+### Nodejs Rules
+在 `Nodejs` 项目中使用:
+
+```js
+import linter from '@hacxy/eslint-config/nodejs';
+export default linter({
+  // ... your eslint config
+});
+```
+该规则在[公共配置](https://github.com/hacxy/eslint-config/blob/main/src/rules/common.ts)的基础上进行扩展, 你可以在 [rules/nodejs.ts](https://github.com/hacxy/eslint-config/blob/main/src/rules/nodejs.ts) 中可以查看这些规则.
 
 ## License
 
