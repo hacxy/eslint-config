@@ -1,10 +1,10 @@
-import linter from 'dist/index';
-import nestjsLinter from 'dist/nestjs';
+import Linter from 'dist/index';
+import NodejsLinter from 'dist/nodejs';
 import { assertType, expectTypeOf, it } from 'vitest';
 
 it('types work properly', () => {
-  expectTypeOf(linter).toBeFunction();
-  expectTypeOf(nestjsLinter).toBeFunction();
-  assertType(linter());
-  assertType(nestjsLinter({}));
+  expectTypeOf(Linter).toBeFunction();
+  expectTypeOf(NodejsLinter).toBeFunction();
+  assertType(Linter());
+  assertType(NodejsLinter({}));
 });
