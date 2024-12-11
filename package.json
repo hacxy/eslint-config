@@ -23,13 +23,9 @@
       "import": "./dist/vue.js",
       "require": "./dist/vue.cjs"
     },
-    "./nestjs": {
-      "import": "./dist/nestjs.js",
-      "require": "./dist/nestjs.cjs"
-    },
-    "./cli": {
-      "import": "./dist/cli.js",
-      "require": "./dist/cli.cjs"
+    "./nodejs": {
+      "import": "./dist/nodejs.js",
+      "require": "./dist/nodejs.cjs"
     }
   },
   "main": "index.js",
