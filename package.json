@@ -1,0 +1,58 @@
+{
+  "name": "@hacxy/eslint-config",
+  "version": "0.0.0",
+  "description": "Eslint config",
+  "author": {
+    "name": "hacxy",
+    "email": "hacxy.js@outlook.com"
+  },
+  "license": "MIT",
+  "keywords": [
+    "eslint-config"
+  ],
+  "exports": {
+    ".": {
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    },
+    "./vue": {
+      "import": "./dist/vue.js",
+      "require": "./dist/vue.cjs"
+    },
+    "./nestjs": {
+      "import": "./dist/nestjs.js",
+      "require": "./dist/nestjs.cjs"
+    },
+    "./cli": {
+      "import": "./dist/cli.js",
+      "require": "./dist/cli.cjs"
+    }
+  },
+  "main": "index.js",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "tsup --format esm,cjs --watch",
+    "build": "tsup --format esm,cjs --clean",
+    "lint": "eslint --flag unstable_ts_config --fix",
+    "prepublishOnly": "npm run build",
+    "test": "vitest run",
+    "release": "np",
+    "prepare": "simple-git-hooks"
+  },
+  "peerDependencies": {
+    "eslint": "^9.10.0"
+  },
+  "dependencies": {
+    "@antfu/eslint-config": "^3.11.2"
+  },
+  "devDependencies": {
+    "jiti": "^2.4.1",
+    "lint-staged": "^15.2.11",
+    "simple-git-hooks": "^2.11.1",
+    "tsup": "8.3.0",
+    "typescript": "^5.7.2",
+    "vitest": "^2.1.8"
+  }
+}
