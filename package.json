@@ -26,6 +26,10 @@
     "./nodejs": {
       "import": "./dist/nodejs.js",
       "require": "./dist/nodejs.cjs"
+    },
+    "./react": {
+      "import": "./dist/react.js",
+      "require": "./dist/react.cjs"
     }
   },
   "main": "index.js",

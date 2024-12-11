@@ -1,16 +1,15 @@
 import type { AntfuLinter } from './types';
 import commonLinter from './index';
-import { VueRules } from './rules/vue';
+import { ReactRules } from './rules/react';
 
 const linter: AntfuLinter = (options, ...userConfig) => {
   return commonLinter({
-    vue: true,
+    react: true,
     ...options,
     rules: {
-      ...VueRules,
-      ...options?.rules,
+      ...ReactRules,
+      ...options?.rules
     },
   }, ...userConfig);
 };
-
 export default linter;

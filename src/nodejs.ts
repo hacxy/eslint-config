@@ -1,13 +1,11 @@
-import baseLinter from '@antfu/eslint-config';
-import { CommonRules } from './rules/common';
+import type { AntfuLinter } from './types';
+import commonLinter from './index';
 import { NodejsRules } from './rules/nodejs';
 
-const linter: typeof baseLinter = (options, ...userConfig) => {
-  return baseLinter({
-    typescript: true,
+const linter: AntfuLinter = (options, ...userConfig) => {
+  return commonLinter({
     ...options,
     rules: {
-      ...CommonRules,
       ...NodejsRules,
       ...options?.rules,
     },
