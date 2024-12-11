@@ -2,10 +2,12 @@
 
 [![code style](https://antfu.me/badge-code-style.svg)](https://github.com/antfu/eslint-config)
 
-基于 [@antfu/eslint-config](https://github.com/antfu/eslint-config) 的 eslint 配置预设, 所有预设都遵循我的个人喜好: [rules](https://github.com/hacxy/eslint-config/tree/main/src/rules). 仅使用eslint的格式化能力, 无需 Prettier
+基于 [@antfu/eslint-config](https://github.com/antfu/eslint-config) 的 eslint 配置预设, 所有预设都遵循我的个人喜好: [rules](https://github.com/hacxy/eslint-config/tree/main/src/rules).
+
+这将会使项目仅使用eslint的格式化能力, 而无需安装和配置 Prettier
 
 ## 先决条件
-eslint v9.5.0+
+💡 eslint v9.5.0+
 
 ## 使用
 
@@ -77,6 +79,15 @@ import linter from '@hacxy/eslint-config';
 export default linter({
   // ... your eslint config
 });
+```
+### 将脚本加入到package.json
+```json
+{
+  "scripts": {
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix"
+  }
+}
 ```
 从 `@hacxy/eslint-config` 中默认导出的方法为公共规则, 它不会开启任何框架的eslint规则, 在 [rules/common.ts](https://github.com/hacxy/eslint-config/blob/main/src/rules/common.ts) 中可以查看这些规则.
 
