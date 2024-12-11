@@ -1,3 +1,5 @@
 import linter from './src';
 
-export default linter();
+export default linter({
+  ignores: ['scripts/**/*']
+});
