@@ -40,7 +40,7 @@ export default linter({
   // ... your eslint config
 });
 ```
-在 [rules/vue.ts](https://github.com/hacxy/eslint-config/blob/main/src/rules/common.ts) 中可以查看这些规则.
+该规则在[公共配置](https://github.com/hacxy/eslint-config/blob/main/src/rules/common.ts)的基础上进行扩展, 你可以在 [rules/vue.ts](https://github.com/hacxy/eslint-config/blob/main/src/rules/common.ts) 中可以查看这些规则.
 
 ## License
 
