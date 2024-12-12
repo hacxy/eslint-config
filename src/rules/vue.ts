@@ -1,6 +1,6 @@
 import type { Rules } from '@antfu/eslint-config';
 
-export const VueRules = {
+export const VueRules: Rules = {
   // Vue 属性连字符规则，始终使用连字符
   'vue/attribute-hyphenation': [2, 'always'],
   // Vue 每行最多属性数规则，单行最多 3 个
@@ -35,4 +35,4 @@ export const VueRules = {
   'vue/valid-define-options': 2,
   // 禁止 template 中使用 this
   'vue/this-in-template': [2, 'never'],
-} as Rules;
+};
