@@ -40,10 +40,11 @@
     "dev": "tsup --format esm,cjs --watch",
     "build": "tsup --format esm,cjs --clean",
     "lint": "eslint --flag unstable_ts_config . --fix",
+    "test": "vitest run",
+    "commit": "git-cz",
     "prepublishOnly": "npm run build",
     "release": "bumpp && pnpm publish",
-    "prepare": "simple-git-hooks",
-    "test": "vitest run"
+    "prepare": "simple-git-hooks"
   },
   "peerDependencies": {
     "eslint": "^9.10.0"
@@ -53,6 +54,8 @@
   },
   "devDependencies": {
     "bumpp": "^9.9.0",
+    "commitizen": "^4.3.1",
+    "cz-git": "^1.11.0",
     "jiti": "^2.4.1",
     "lint-staged": "^15.2.11",
     "simple-git-hooks": "^2.11.1",
@@ -61,12 +64,18 @@
     "vitest": "^2.1.8"
   },
   "simple-git-hooks": {
-    "pre-commit": "pnpm lint-staged",
+    "pre-commit": "npx lint-staged",
     "commit-msg": "node scripts/git-hooks/commit-msg.mjs"
   },
   "lint-staged": {
     "*": [
       "eslint --flag unstable_ts_config . --fix"
     ]
+  },
+  "config": {
+    "commitizen": {
+      "path": "node_modules/cz-git",
+      "useEmoji": true
+    }
   }
 }
