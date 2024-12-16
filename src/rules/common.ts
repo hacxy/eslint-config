@@ -47,4 +47,5 @@ export const CommonRules: Rules = {
   'unused-imports/no-unused-imports': 2,
   'node/prefer-global/buffer': 0,
   'node/prefer-global/process': 0,
+  'antfu/consistent-list-newline': 0,
 };

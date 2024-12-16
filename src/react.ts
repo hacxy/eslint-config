@@ -5,6 +5,7 @@ import { ReactRules } from './rules/react';
 const linter: AntfuLinter = (options, ...userConfig) => {
   return commonLinter({
     react: true,
+    yaml: true,
     ...options,
     rules: {
       ...ReactRules,
