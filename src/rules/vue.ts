@@ -8,7 +8,7 @@ export const VueRules: Rules = {
     singleline: 3,
   }],
   // Vue template 模版中组件规则，使用 kebab-case
-  'vue/component-name-in-template-casing': [2, 'kebab-case'],
+  'vue/component-name-in-template-casing': [2, 'PascalCase'],
   // Vue 禁止在 await 后面使用 expose 和 生命周期
   'vue/no-expose-after-await': 2,
   'vue/no-lifecycle-after-await': 2,
