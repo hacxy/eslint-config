@@ -45,7 +45,12 @@ export const CommonRules: Rules = {
   'eslint-comments/no-unlimited-disable': 0,
   // 不允许未使用的模块
   'unused-imports/no-unused-imports': 2,
+
   'node/prefer-global/buffer': 0,
+
   'node/prefer-global/process': 0,
+
   'antfu/consistent-list-newline': 0,
+
+  'antfu/if-newline': 0
 };

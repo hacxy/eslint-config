@@ -13,14 +13,14 @@ export const VueRules: Rules = {
   'vue/no-expose-after-await': 2,
   'vue/no-lifecycle-after-await': 2,
   // 限制 sfc 语言规则
-  'vue/block-lang': [2, {
-    script: {
-      lang: ['ts', 'tsx'],
-    },
-    style: {
-      lang: 'scss',
-    },
-  }],
+  // 'vue/block-lang': [2, {
+  //   script: {
+  //     lang: ['ts', 'tsx'],
+  //   },
+  //   style: {
+  //     lang: 'scss',
+  //   },
+  // }],
   // 块顺序规则
   'vue/block-order': [2, { order: ['script', 'template', 'style'] }],
   // 组件风格规则，使用 script-setup
