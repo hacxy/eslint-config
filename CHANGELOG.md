@@ -1,3 +1,9 @@
+# [0.1.0](https://github.com/hacxy/eslint-config/compare/v0.0.8...v0.1.0) (2025-06-16)
+
+### Features
+
+- update eslint version and eslint-config version ([f55d1cf](https://github.com/hacxy/eslint-config/commit/f55d1cffe8cc5f01ebdd139ff357364ea1fd730e))
+
 ## [0.0.8](https://github.com/hacxy/eslint-config/compare/v0.0.7...v0.0.8) (2025-02-26)
 
 ### Bug Fixes
