@@ -1,3 +1,3 @@
-import linter from './src';
+import defineLint from './src';
 
-export default linter();
+export default defineLint();

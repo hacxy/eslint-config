@@ -2,7 +2,7 @@ import type { AntfuLinter } from './types';
 import commonLinter from './index';
 import { ReactRules } from './rules/react';
 
-const linter: AntfuLinter = (options, ...userConfig) => {
+const defineLint: AntfuLinter = (options, ...userConfig) => {
   return commonLinter({
     react: true,
     yaml: true,
@@ -13,4 +13,4 @@ const linter: AntfuLinter = (options, ...userConfig) => {
     },
   }, ...userConfig);
 };
-export default linter;
+export default defineLint;

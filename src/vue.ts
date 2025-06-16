@@ -2,7 +2,7 @@ import type { AntfuLinter } from './types';
 import commonLinter from './index';
 import { VueRules } from './rules/vue';
 
-const linter: AntfuLinter = (options, ...userConfig) => {
+const defineLint: AntfuLinter = (options, ...userConfig) => {
   return commonLinter({
     vue: true,
     ...options,
@@ -13,4 +13,4 @@ const linter: AntfuLinter = (options, ...userConfig) => {
   }, ...userConfig);
 };
 
-export default linter;
+export default defineLint;

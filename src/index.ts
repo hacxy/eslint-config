@@ -1,9 +1,9 @@
 import type { AntfuLinter } from './types';
-import baseLinter from '@antfu/eslint-config';
+import antfu from '@antfu/eslint-config';
 import { CommonRules } from './rules/common';
 
-const linter: AntfuLinter = (options, ...userConfig) => {
-  return baseLinter({
+const defineLint: AntfuLinter = (options, ...userConfig) => {
+  return antfu({
     typescript: true,
     yaml: true,
     formatters: {
@@ -19,4 +19,4 @@ const linter: AntfuLinter = (options, ...userConfig) => {
   }, ...userConfig);
 };
 
-export default linter;
+export default defineLint;

@@ -2,7 +2,7 @@ import type { AntfuLinter } from './types';
 import commonLinter from './index';
 import { NodejsRules } from './rules/nodejs';
 
-const linter: AntfuLinter = (options, ...userConfig) => {
+const defineLint: AntfuLinter = (options, ...userConfig) => {
   return commonLinter({
     ...options,
     rules: {
@@ -12,4 +12,4 @@ const linter: AntfuLinter = (options, ...userConfig) => {
   }, ...userConfig);
 };
 
-export default linter;
+export default defineLint;
