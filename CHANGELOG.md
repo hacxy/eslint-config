@@ -1,3 +1,9 @@
+# [0.2.0](https://github.com/hacxy/eslint-config/compare/v0.1.0...v0.2.0) (2025-07-22)
+
+### Features
+
+- add common config ([6fa3cfb](https://github.com/hacxy/eslint-config/commit/6fa3cfb9db5bc69250217de711287b2fd4132f6b))
+
 # [0.1.0](https://github.com/hacxy/eslint-config/compare/v0.0.8...v0.1.0) (2025-06-16)
 
 ### Features
