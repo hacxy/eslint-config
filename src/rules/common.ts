@@ -13,10 +13,8 @@ export const CommonRules: Rules = {
   'max-lines': [2, { max: 300 }],
   // 函数参数最多为 3 个
   'max-params': [2, { max: 3 }],
-  // 禁止使用 console
-  'no-console': 2,
-  // 禁止使用 debugger
-  'no-debugger': 2,
+  'no-console': 2, // 禁止使用 console
+  'no-debugger': 2, // 禁止使用 debugger
   // 禁止使用 undefined
   'no-undefined': 2,
   // 禁止使用 var
