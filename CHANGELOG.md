@@ -1,3 +1,5 @@
+# [0.4.0](https://github.com/hacxy/eslint-config/compare/v0.2.0...v0.4.0) (2025-07-23)
+
 # [0.2.0](https://github.com/hacxy/eslint-config/compare/v0.1.0...v0.2.0) (2025-07-22)
 
 ### Features
