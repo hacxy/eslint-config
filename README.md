@@ -80,9 +80,10 @@ npm install @hacxy/eslint-config -D
 项目根目录下创建 `eslint.config.js` 或者 `eslint.config.mjs`:
 
 ```js
-import linter from '@hacxy/eslint-config';
-export default linter({
-  // ... your eslint config
+import hacxy from '@hacxy/eslint-config';
+
+export default hacxy({
+  // ... your config
 });
 ```
 
@@ -102,9 +103,10 @@ export default linter({
 > [!TIP] > **需要注意的是, 所有的预设都默认使用typescript规则校验, 如果你不使用typescript, 请覆盖默认配置:**
 >
 > ```js
-> import linter from '@hacxy/eslint-config';
-> export default linter({
->   typescript: false
+> import hacxy from '@hacxy/eslint-config';
+>
+> export default hacxy({
+>   typescript: false,
 >   // ... your eslint config
 > });
 > ```
@@ -114,8 +116,9 @@ export default linter({
 在vue项目中使用:
 
 ```js
-import linter from '@hacxy/eslint-config/vue';
-export default linter({
+import hacxy from '@hacxy/eslint-config/vue';
+
+export default hacxy({
   // ... your eslint config
 });
 ```
@@ -127,8 +130,9 @@ export default linter({
 在 `Nodejs` 项目中使用:
 
 ```js
-import linter from '@hacxy/eslint-config/nodejs';
-export default linter({
+import hacxy from '@hacxy/eslint-config/nodejs';
+
+export default hacxy({
   // ... your eslint config
 });
 ```
