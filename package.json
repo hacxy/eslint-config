@@ -1,7 +1,7 @@
 {
   "name": "@hacxy/eslint-config",
   "type": "module",
-  "version": "0.2.0",
+  "version": "0.3.3",
   "description": "Hacxy eslint config",
   "author": {
     "name": "hacxy",
@@ -16,29 +16,30 @@
   ],
   "exports": {
     ".": {
-      "import": "./dist/index.js",
-      "require": "./dist/index.cjs"
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
     },
     "./vue": {
-      "import": "./dist/vue.js",
-      "require": "./dist/vue.cjs"
+      "types": "./dist/rules/vue.d.ts",
+      "import": "./dist/rules/vue.js"
     },
     "./nodejs": {
-      "import": "./dist/nodejs.js",
-      "require": "./dist/nodejs.cjs"
+      "types": "./dist/rules/node.d.ts",
+      "import": "./dist/rules/nodejs.js"
     },
     "./react": {
-      "import": "./dist/react.js",
-      "require": "./dist/react.cjs"
+      "types": "./dist/rules/react.d.ts",
+      "import": "./dist/rules/react.js"
     }
   },
-  "main": "index.js",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
   "files": [
     "dist"
   ],
   "scripts": {
-    "dev": "tsup --format esm,cjs --watch",
-    "build": "tsup --format esm,cjs --clean",
+    "stub": "tsdown",
+    "build": "tsdown --clean --dts",
     "lint": "eslint --flag unstable_ts_config .",
     "lint:fix": "eslint --flag unstable_ts_config . --fix",
     "test": "vitest run",
@@ -62,7 +63,7 @@
     "jiti": "^2.4.1",
     "lint-staged": "^15.2.11",
     "simple-git-hooks": "^2.11.1",
-    "tsup": "8.5.0",
+    "tsdown": "^0.13.0",
     "typescript": "^5.8.3",
     "vitest": "^2.1.8"
   },

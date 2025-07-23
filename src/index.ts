@@ -2,7 +2,7 @@ import type { AntfuLinter } from './types';
 import antfu from '@antfu/eslint-config';
 import { CommonRules } from './rules/common';
 
-const defineLint: AntfuLinter = (options, ...userConfig) => {
+const hacxy: AntfuLinter = (options, ...userConfig) => {
   return antfu(
     {
       typescript: true,
@@ -20,13 +20,8 @@ const defineLint: AntfuLinter = (options, ...userConfig) => {
         ...options?.rules,
       },
     },
-    {
-      files: ['**/*.md'],
-      rules: {
-        'no-console': 0,
-      },
-    },
-    ...userConfig);
+    ...userConfig,
+  );
 };
 
-export default defineLint;
+export default hacxy;
