@@ -1,3 +1,9 @@
+## [0.4.1](https://github.com/hacxy/eslint-config/compare/v0.4.0...v0.4.1) (2025-07-24)
+
+### Bug Fixes
+
+- handle module export ([27135e8](https://github.com/hacxy/eslint-config/commit/27135e8ebf2a14c6577ffa8f0d34741ba8981eda))
+
 # [0.4.0](https://github.com/hacxy/eslint-config/compare/v0.2.0...v0.4.0) (2025-07-23)
 
 # [0.2.0](https://github.com/hacxy/eslint-config/compare/v0.1.0...v0.2.0) (2025-07-22)
