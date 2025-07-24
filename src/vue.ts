@@ -2,9 +2,18 @@ import type { AntfuLinter } from './types';
 import commonLinter from './index';
 import { VueRules } from './rules/vue';
 
-const defineLint: AntfuLinter = (options, ...userConfig) => {
+const hacxy: AntfuLinter = (options, ...userConfig) => {
   return commonLinter({
     vue: true,
+    typescript: true,
+    yaml: true,
+    markdown: true,
+    jsonc: true,
+    formatters: {
+      css: true,
+      html: true,
+      markdown: true,
+    },
     ...options,
     rules: {
       ...VueRules,
@@ -13,4 +22,4 @@ const defineLint: AntfuLinter = (options, ...userConfig) => {
   }, ...userConfig);
 };
 
-export default defineLint;
+export default hacxy;

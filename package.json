@@ -20,16 +20,16 @@
       "import": "./dist/index.js"
     },
     "./vue": {
-      "types": "./dist/rules/vue.d.ts",
-      "import": "./dist/rules/vue.js"
+      "types": "./dist/vue.d.ts",
+      "import": "./dist/vue.js"
     },
     "./nodejs": {
-      "types": "./dist/rules/node.d.ts",
-      "import": "./dist/rules/nodejs.js"
+      "types": "./dist/nodejs.d.ts",
+      "import": "./dist/nodejs.js"
     },
     "./react": {
-      "types": "./dist/rules/react.d.ts",
-      "import": "./dist/rules/react.js"
+      "types": "./dist/react.d.ts",
+      "import": "./dist/react.js"
     }
   },
   "main": "./dist/index.js",
