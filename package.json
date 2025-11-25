@@ -42,7 +42,6 @@
     "build": "tsdown --clean --dts",
     "lint": "eslint --flag unstable_ts_config .",
     "lint:fix": "eslint --flag unstable_ts_config . --fix",
-    "test": "vitest run",
     "commit": "git-cz",
     "prepublishOnly": "npm run build",
     "prepare": "simple-git-hooks",
@@ -52,8 +51,8 @@
     "eslint": "^9.29.0"
   },
   "dependencies": {
-    "@antfu/eslint-config": "^4.17.0",
-    "eslint-plugin-format": "^1.0.1"
+    "@antfu/eslint-config": "^6.2.0",
+    "eslint-plugin-format": "^1.0.2"
   },
   "devDependencies": {
     "@hacxy/bump": "^0.1.0",
@@ -62,9 +61,8 @@
     "jiti": "^2.4.1",
     "lint-staged": "^15.2.11",
     "simple-git-hooks": "^2.11.1",
-    "tsdown": "^0.13.0",
-    "typescript": "^5.8.3",
-    "vitest": "^2.1.8"
+    "tsdown": "^0.16.6",
+    "typescript": "^5.9.3"
   },
   "simple-git-hooks": {
     "pre-commit": "npx lint-staged",
