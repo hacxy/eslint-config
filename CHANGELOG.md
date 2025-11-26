@@ -1,3 +1,9 @@
+## [0.5.3](https://github.com/hacxy/eslint-config/compare/v0.5.2...v0.5.3) (2025-11-26)
+
+### Bug Fixes
+
+- remove minification option from tsdown configuration ([e714808](https://github.com/hacxy/eslint-config/commit/e7148081b6e1de0928c509c352713dbc9c3c7a7e))
+
 ## [0.5.2](https://github.com/hacxy/eslint-config/compare/v0.5.1...v0.5.2) (2025-11-26)
 
 ### Bug Fixes
