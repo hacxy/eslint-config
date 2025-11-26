@@ -1,3 +1,10 @@
+## [0.5.1](https://github.com/hacxy/eslint-config/compare/v0.5.0...v0.5.1) (2025-11-26)
+
+### Bug Fixes
+
+- enhance ESLint configuration with TypeScript support and custom rules ([09ef587](https://github.com/hacxy/eslint-config/commit/09ef587a07fec8288fd8fccfa4a0169809fc2878))
+- update package.json and tsdown.config.ts for module exports and minification ([9912f48](https://github.com/hacxy/eslint-config/commit/9912f48d5fddefa3e379e23172a3f3e1f9d060e2))
+
 # [0.5.0](https://github.com/hacxy/eslint-config/compare/v0.4.1...v0.5.0) (2025-11-26)
 
 ### Features
