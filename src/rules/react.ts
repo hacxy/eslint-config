@@ -5,7 +5,7 @@ const react: LintOptions = [{
   rules: {
     'react/no-prop-types': [2],
     'react/no-nested-components': [2],
-    'react-hooks-extra/no-direct-set-state-in-use-effect': [2],
+    'react-hooks/set-state-in-effect': [2],
   },
 }];
 
