@@ -22,6 +22,7 @@ const baseConfig: LintOptions = [{
     'style/indent': [2, 2],
     'style/linebreak-style': [2, 'unix'],
     'unused-imports/no-unused-imports': 2,
+    'antfu/consistent-list-newline': [0, 'consistent'],
   },
 }];
 
