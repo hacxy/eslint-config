@@ -1,3 +1,9 @@
+## [0.5.4](https://github.com/hacxy/eslint-config/compare/v0.5.3...v0.5.4) (2025-11-26)
+
+### Bug Fixes
+
+- update package.json and tsdown.config.ts to include main entry and enable minification ([fbd26ff](https://github.com/hacxy/eslint-config/commit/fbd26ffa01ba0419f72becb1085130317ff93c5b))
+
 ## [0.5.3](https://github.com/hacxy/eslint-config/compare/v0.5.2...v0.5.3) (2025-11-26)
 
 ### Bug Fixes
