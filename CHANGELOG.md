@@ -1,3 +1,10 @@
+# [0.5.0](https://github.com/hacxy/eslint-config/compare/v0.4.1...v0.5.0) (2025-11-26)
+
+### Features
+
+- simplify linter configuration by consolidating rules and removing unused files ([b0e1ea0](https://github.com/hacxy/eslint-config/commit/b0e1ea0e8654f60911dba3f049a1450ed2e77721))
+- update dependencies and remove test script from CI ([cc15643](https://github.com/hacxy/eslint-config/commit/cc1564332512b94a6de48f70088d829b32fdf7bf))
+
 ## [0.4.1](https://github.com/hacxy/eslint-config/compare/v0.4.0...v0.4.1) (2025-07-24)
 
 ### Bug Fixes
