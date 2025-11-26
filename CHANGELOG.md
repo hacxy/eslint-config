@@ -1,3 +1,9 @@
+## [0.5.2](https://github.com/hacxy/eslint-config/compare/v0.5.1...v0.5.2) (2025-11-26)
+
+### Bug Fixes
+
+- disable 'antfu/no-import-dist' rule in Node.js linting configuration ([34a96ac](https://github.com/hacxy/eslint-config/commit/34a96ac240346c45dbf5715e12f6effa29455efd))
+
 ## [0.5.1](https://github.com/hacxy/eslint-config/compare/v0.5.0...v0.5.1) (2025-11-26)
 
 ### Bug Fixes
