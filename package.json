@@ -55,7 +55,7 @@
     "eslint-plugin-format": "^1.0.2"
   },
   "devDependencies": {
-    "@hacxy/bump": "^0.1.0",
+    "@hacxy/bump": "^0.3.1",
     "commitizen": "^4.3.1",
     "cz-git": "^1.11.0",
     "jiti": "^2.4.1",

@@ -1,5 +1,10 @@
-import type { Rules } from '@antfu/eslint-config';
+import type { LintOptions } from '../types';
 
-export const NodejsRules: Rules = {
-  'no-console': 0
-};
+const nodejs: LintOptions = [{
+  name: 'hacxy/nodejs',
+  rules: {
+    'no-console': 0,
+  },
+}];
+
+export default nodejs;
