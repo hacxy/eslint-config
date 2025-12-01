@@ -1,3 +1,9 @@
+## [0.5.5](https://github.com/hacxy/eslint-config/compare/v0.5.4...v0.5.5) (2025-12-01)
+
+### Bug Fixes
+
+- rename 'react/no-nested-components' to 'react/no-nested-component-definitions' in ESLint configuration ([76a5294](https://github.com/hacxy/eslint-config/commit/76a529450052d266e6472c4e0605103cd5e25c72))
+
 ## [0.5.4](https://github.com/hacxy/eslint-config/compare/v0.5.3...v0.5.4) (2025-11-26)
 
 ### Bug Fixes
